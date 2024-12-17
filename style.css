@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
+:root {
+    --beige: #FDF7F2;
+    --brown: #544326;
+    --brown2: #624E2D;
+    --brown3: #512D0E;
+    --brown4: #80663D;
+    --gray: #424242;
+    --blue: #3976C7;
+    --black: #272727;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    font-family: Poppins;
+    background-color: var(--beige);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
+
+}
+header img {
+    width: 100px;
+    height: 100px;
+}
+.header-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 50px;
+}
+.header-links a {
+    color: var(--brown2);
+    font-size: 15px;
+    text-decoration: none;
+}
+.order-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.order-cart div {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    background-color: var(--brown);
+    
+}
+.order-cart div a {
+    color: var(--beige);
+    font-size: 15px;
+    text-decoration: none;
+
+}
+.order-cart a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-icon {
+    width: 30px;
+    height: 30px;
+}
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: Raleway;
+    margin: 10%;
+    margin-bottom: 20%;
+    
+}
+#intro h1 {
+    color: var(--brown);
+    font-size: 150px;
+    
+}
+#intro h2 {
+    color: var(--brown3);
+    font-size: 90px;
+}
+#title1, #title2 {
+    position: absolute;
+    z-index: -1;
+}
+
+#title1 {
+    width: 206px;
+    height: 301px;
+    left: 56px;
+    top: 300px;
+}
+#title2 {
+    width: 234px;
+    right: 56px;
+    top: 150px;
+}    
+#intro-link {
+    position: absolute;
+    right: 250px;
+    bottom: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 60px;
+    border: 2px solid var(--brown3);
+}
+#intro-link a {
+    color: var(--brown3);
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 20px;
+}
+#slideshow {
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    
+}
+#slideshow img {
+    width: 100%;
+}
+#slideshow p {
+    position: absolute;
+    padding: 30px;
+    font-family: Poppins;
+    font-size: 24px;
+}
+#slide-indicator {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.slide-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: var(--brown3);
+}
+#about-us {
+    display: flex;
+    margin: 10%;
+    flex-direction: column;
+    width: 60%;
+    gap: 20px;
+    font-family: Poppins;
+}
+#about-us h1 {
+    font-family: Raleway;
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--brown);
+}
+#about-us p {
+    font-size: 18px;
+    color: var(--brown2);
+}
+#about-us ul {
+    padding-left: 20px;
+    font-size: 18px;
+    color: var(--brown2);
+}
+#about-us img {
+    position: absolute;
+    width: 300px;
+    right: 0;
+}
+#main-selection-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main-selection-div h1 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Raleway;
+    color: var(--brown);
+    padding: 50px;
+}
+#main-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    
+}
+.main-selection-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: var(--brown3);
+}
+.drink {
+    background-color: var(--brown4);
+}
+.main-selection-item img {
+    border-radius: 100%;
+    translate: 0 -100px;
+    position: absolute;
+    
+}
+.main-selection-item p {
+    font-family: Rosario;
+    position: absolute;
+    translate: 0 50px;
+    font-size: 24px;
+    color: white;
+}
+#selection-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    width: 240px;
+    height: 60px;
+    border: 2px solid var(--brown3);
+}
+#selection-link a {
+    font-size: 20px;
+    font-family: Poppins;
+    text-decoration: none;
+    color: var(--brown3);
+}
+#main-equipment {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20%;
+}
+#main-equipment h1 {
+    font-family: Rosario;
+    font-size: 36px;
+    position: absolute;
+    color: var(--brown3);
+}
+#main-equipment div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 60px;
+    left: 10%;
+    background-color: var(--brown3);
+    translate: 0px 900px;
+}
+#main-equipment div a {
+    font-family: Poppins;
+    color: var(--beige);
+    text-decoration: none;
+    font-size: 16px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+    background-color: var(--gray);
+}
+.contact-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-navbar img {
+    width: 150px;
+    height: 150px;
+    
+}
+.contact-links {
+    display: flex;
+    margin: 0 auto;
+    gap: 50px;
+}
+.contact-links a{
+    font-size: 18px;
+    color: var(--beige);
+    font-family: Poppins;
+    text-decoration: none;
+}
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    font-family: Raleway;
+    font-size: 16px;
+    color: var(--beige);
+}
+.contact-info h1 {
+    font-size: 28px;
+}
+
+.contact-email {
+    color: var(--blue);
+}
+.contact-message {
+    display: flex;
+    flex-direction: column;
+}
+.contact-message p {
+    font-size: 16px;
+    font-family: Poppins;
+    color: var(--beige);
+}
+textarea {
+    width: 400px;
+    height: 200px;
+}
+.contact-message input {
+    height: 40px;
+    background-color: var(--black);
+    border: none;
+    margin: 0;
+    color: var(--beige);
+}
