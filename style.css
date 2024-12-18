@@ -107,7 +107,7 @@ header img {
 #intro-link {
     position: absolute;
     right: 250px;
-    bottom: -100px;
+    top: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,6 +167,7 @@ header img {
 #about-us p {
     font-size: 18px;
     color: var(--brown2);
+    text-align: justify;
 }
 #about-us ul {
     padding-left: 20px;
@@ -183,6 +184,7 @@ header img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 #main-selection-div h1 {
     font-size: 40px;
@@ -195,6 +197,7 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 90%;
     gap: 100px;
     flex-wrap: wrap;
     padding-top: 50px;
@@ -335,4 +338,18 @@ textarea {
     border: none;
     margin: 0;
     color: var(--beige);
+}
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--black);
+    width: 70px;
+    height: 30px;
+}
+.rating p {
+    font-family: Poppins;
+    font-size: 12px;
+    color: white;
 }

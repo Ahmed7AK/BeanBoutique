@@ -1,0 +1,88 @@
+#selection-div {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 10%;
+}
+#selection-div h1 {
+    font-size: 48px;
+    font-family: Raleway;
+    color: var(--brown3);
+}
+#selection-drinks h2 {
+    font-size: 32px;
+    font-family: Raleway;
+    color: var(--brown4);
+    padding-bottom: 100px;
+}
+.product-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    margin-bottom: 100px;
+}
+.product img {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    translate: 50px -50px;
+}
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    translate: 0px -50px;
+}
+.product-name {
+    font-family: Rosario;
+    color: white;
+    font-size: 26px;
+}
+
+.product-price {
+    font-family: Poppins;
+    font-size: 20px;
+    color: white;
+}
+.add-product {
+    font-family: Rosario;
+    font-size: 30px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid var(--brown4);
+    color: var(--brown4);
+    translate: 0px -50px;
+}
+.pastries {
+    background-color: var(--brown2);
+}
+.add-pastry {
+    border: 2px solid var(--brown2);
+    color: var(--brown2);
+}
+#selection-pastries h2 {
+    font-size: 32px;
+    font-family: Raleway;
+    color: var(--brown2);
+    padding-bottom: 100px;
+}
+.coffee {
+    background-color: var(--brown3);
+}
+.add-coffee {
+    border: 2px solid var(--brown3);
+    color: var(--brown3);
+}
+#selection-coffee h2 {
+    font-size: 32px;
+    font-family: Raleway;
+    color: var(--brown3);
+    padding-bottom: 100px;
+}

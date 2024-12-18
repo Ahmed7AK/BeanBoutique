@@ -3,99 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Bean Boutique</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
     <header>
-        <a href="./index.html">
-            <img src="./images/transparentLogo.png" alt="Bean Boutique logo" />
+        <a href="../index.html">
+            <img src="../images/transparentLogo.png" alt="Bean Boutique logo" />
         </a>
         <div class="header-links">
-            <a href="./selection">Our Selection</a>
-            <a href="./equipment">Brewing Equipment</a>
-            <a href="./events">Events</a>
+            <a href="../selection">Our Selection</a>
+            <a href="#">Brewing Equipment</a>
+            <a href="../events/">Events</a>
             <a href="#contact-us">Contact Us</a>
         </div>
         <div class="order-cart">
             <div>
-                <a href="./selection">Order Now</a>
+                <a href="../selection">Order Now</a>
             </div>
             <a href="">
-                <img class="cart-icon" src="./images/cart.png" alt="shopping cart" />
+                <img class="cart-icon" src="../images/cart.png" alt="shopping cart" />
             </a>  
         </div>
     </header>
-    <div id="intro">
-        <h1>EXPERIENCE</h1>
-        <h2>The Art of Coffee</h2>
-        <img id="title1" src="./images/title1.jpg" alt="" />
-        <img id="title2" src="./images/title2.jpg" alt="" />
-        <div id="intro-link">
-            <a href="">Explore Our Blends</a>
-        </div>
-    </div>
-    <div id="slideshow">
-        <img src="./images/slideshow1.png" alt="" />
-        <p>Discover Unique Blends</p>
-        <div id="slide-indicator">
-            <div class="slide-circle" id="slide-circle1"></div>
-            <div class="slide-circle" id="slide-circle2"></div>
-            <div class="slide-circle" id="slide-circle3"></div>
-        </div>
-    </div>
-    <div id="about-us">
-        <h1>About Us</h1>
-        <p>Bean Boutique is more than just a coffee shop; it's a space where the love for coffee and community comes alive. Since our inception, we’ve been committed to sourcing the finest beans and providing an inviting atmosphere for coffee enthusiasts. Whether you're savoring your first espresso or attending one of our engaging workshops, Bean Boutique is dedicated to crafting experiences that bring people together. As we venture into the online space, we remain rooted in our core values of quality, connection, and innovation.</p>
-        <ul>
-            <li>Locally owned and operated.</li>
-            <li>Ethically sourced coffee beans from sustainable farms.</li>
-            <li>A hub for coffee lovers to learn, connect, and grow.</li>
-        </ul>
-        <img src="./images/transparentVisual.png" alt=""/>
-    </div>
-    <div id="main-selection-div">
-        <h1>For Caffiene Lovers</h1>
-        <div id="main-selection">
-            <div class="main-selection-item drink">
-                <img src="./images/expresso.png" alt=""/>
-                <p>Espresso</p>
-            </div>
-            <div class="main-selection-item drink">
-                <img src="./images/cappuccino.png" alt=""/>
-                <p>Capuccino</p>
-            </div>
-            <div class="main-selection-item drink" >
-                <img src="./images/icedcoffee.png" alt=""/>
-                <p>Iced Coffee</p>
-            </div>
-            <div class="main-selection-item">
-                <img src="./images/lightroast.png" alt=""/>
-                <p>Light Roast</p>
-            </div>
-            <div class="main-selection-item">
-                <img src="./images/mediumroast.png" alt=""/>
-                <p>Medium Roast</p>
-            </div>
-            <div class="main-selection-item">
-                <img src="./images/darkroast.png" alt=""/>
-                <p>Dark Roast</p>
-            </div>
-        </div>
-        <div id="selection-link">
-            <a href="">Our Selection</a>
-        </div>
-    </div>
-    <div id="main-equipment">
-        <img src="./images/equipment.png" alt=""/>
+    <div id="equipment-visual">
+        <img src="../images/equipment.png" alt=""/>
         <h1>High Quality <br> Equipment</h1>
-        <div>
-            <a href="">Brewing Equipment</a>
+    </div>
+    <div id="equipment-quote">
+        <h3 >"Master your brew with out premium equipment. From espresso machines to French presses, we've got you covered."</h3>
+    </div>
+    <div class="equipment-div">
+        <img src="../images/frenchpress.png" />
+        <div class="equipment-info">
+            <h2>Classic French Press</h2>
+            <div class="rating">
+                <p>4.5</p>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.86922 6.11666L1.55255 6.8875L1.45838 6.90666C1.31583 6.94451 1.18588 7.0195 1.08179 7.124C0.977707 7.22849 0.903219 7.35874 0.865934 7.50143C0.82865 7.64413 0.829905 7.79417 0.869572 7.93622C0.909239 8.07828 0.985896 8.20726 1.09172 8.31L4.94338 12.0592L4.03505 17.355L4.02422 17.4467C4.01549 17.5941 4.0461 17.7412 4.11292 17.8729C4.17974 18.0046 4.28037 18.1162 4.4045 18.1963C4.52862 18.2763 4.67179 18.3219 4.81934 18.3284C4.96689 18.3349 5.11352 18.3021 5.24422 18.2333L9.99922 15.7333L14.7434 18.2333L14.8267 18.2717C14.9643 18.3258 15.1138 18.3425 15.2598 18.3198C15.4059 18.2971 15.5434 18.236 15.658 18.1427C15.7727 18.0494 15.8605 17.9273 15.9124 17.7889C15.9643 17.6504 15.9785 17.5007 15.9534 17.355L15.0442 12.0592L18.8975 8.30916L18.9625 8.23833C19.0554 8.12397 19.1163 7.98704 19.139 7.84149C19.1617 7.69594 19.1454 7.54698 19.0918 7.40977C19.0382 7.27257 18.9492 7.15202 18.8338 7.06042C18.7184 6.96883 18.5808 6.90944 18.435 6.88833L13.1184 6.11666L10.7417 1.3C10.6729 1.16044 10.5665 1.04293 10.4344 0.96075C10.3023 0.878575 10.1498 0.835022 9.99422 0.835022C9.83864 0.835022 9.68616 0.878575 9.55406 0.96075C9.42195 1.04293 9.31549 1.16044 9.24672 1.3L6.86922 6.11666Z" fill="white"/>
+                </svg>    
+            </div>
+            <p class="equipment-description">Elegant design with durable glass and stainless steel</p>
+            <p class="equipment-tip">*Use coarse grind coffee for the best results.</p>
+            <p class="equipment-price">£ 80.60</p>
+            <input class="add-equipment" type="button" value="Add to Cart">
+        </div>
+    </div>
+    <div class="equipment-div">
+        <img src="../images/espressomachine.png" />
+        <div class="equipment-info">
+            <h2>Espresso Machine</h2>
+            <div class="rating">
+                <p>4.5</p>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.86922 6.11666L1.55255 6.8875L1.45838 6.90666C1.31583 6.94451 1.18588 7.0195 1.08179 7.124C0.977707 7.22849 0.903219 7.35874 0.865934 7.50143C0.82865 7.64413 0.829905 7.79417 0.869572 7.93622C0.909239 8.07828 0.985896 8.20726 1.09172 8.31L4.94338 12.0592L4.03505 17.355L4.02422 17.4467C4.01549 17.5941 4.0461 17.7412 4.11292 17.8729C4.17974 18.0046 4.28037 18.1162 4.4045 18.1963C4.52862 18.2763 4.67179 18.3219 4.81934 18.3284C4.96689 18.3349 5.11352 18.3021 5.24422 18.2333L9.99922 15.7333L14.7434 18.2333L14.8267 18.2717C14.9643 18.3258 15.1138 18.3425 15.2598 18.3198C15.4059 18.2971 15.5434 18.236 15.658 18.1427C15.7727 18.0494 15.8605 17.9273 15.9124 17.7889C15.9643 17.6504 15.9785 17.5007 15.9534 17.355L15.0442 12.0592L18.8975 8.30916L18.9625 8.23833C19.0554 8.12397 19.1163 7.98704 19.139 7.84149C19.1617 7.69594 19.1454 7.54698 19.0918 7.40977C19.0382 7.27257 18.9492 7.15202 18.8338 7.06042C18.7184 6.96883 18.5808 6.90944 18.435 6.88833L13.1184 6.11666L10.7417 1.3C10.6729 1.16044 10.5665 1.04293 10.4344 0.96075C10.3023 0.878575 10.1498 0.835022 9.99422 0.835022C9.83864 0.835022 9.68616 0.878575 9.55406 0.96075C9.42195 1.04293 9.31549 1.16044 9.24672 1.3L6.86922 6.11666Z" fill="white"/>
+                </svg>    
+            </div>
+            <p class="equipment-description">Sleek, professional-grade espresso machine designed for coffee aficionados and beginners alike.</p>
+            <p class="equipment-tip">*For optimal results, use freshly ground coffee, preheat your machine, and follow the recommended grind size for espresso.</p>
+            <p class="equipment-price">£ 180.60</p>
+            <input class="add-equipment" type="button" value="Add to Cart">
         </div>
     </div>
     <footer id="contact-us">
         <div class="contact-navbar">
-            <img src="./images/logoTransparentLight.png" alt=""/>
+            <img src="../images/logoTransparentLight.png" alt=""/>
             <div class="contact-links">
                 <a href="">Our Selection</a>
                 <a href="">Brewing Equipment</a>
@@ -148,7 +121,7 @@
                 </div>
                 <input type="button" value="Send"/>
             </div>
-            <img src="./images/transparentBeans.png" alt=""/>
+            <img src="../images/transparentBeans.png" alt=""/>
         </div>
     </footer>
 </body>

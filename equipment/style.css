@@ -1,0 +1,76 @@
+
+#equipment-visual {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+#equipment-visual img {
+    width: 80%;
+    margin: 10%;
+}
+#equipment-visual h1 {
+    font-family: Rosario;
+    font-size: 36px;
+    position: absolute;
+    color: var(--brown3);
+    margin: 10%;
+}
+#equipment-quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#equipment-quote h3 {
+    font-size: 25px;
+    font-family: Poppins;
+    color: var(--brown2);
+    text-align: center;
+    width: 520px;
+}
+.equipment-div {
+    display: flex;
+    margin: 10%;
+}
+.equipment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    background-color: var(--gray);
+    padding: 30px;
+
+
+}
+.equipment-info h2 {
+    font-family: Rosario;
+    font-size: 32px;
+    color: white;
+}
+.equipment-description {
+    font-family: Rosario;
+    font-size: 20px;
+    color: white;
+    width: 250px;
+}
+.equipment-tip {
+    font-family: Rosario;
+    font-size: 14px;
+    color: white;
+    width: 270px;
+}
+.equipment-price {
+    font-family: Poppins;
+    font-size: 30px;
+    color: white;
+}
+.add-equipment {
+    background: none;
+    border: none;
+    font-size: 25px;
+    font-family: Rosario;
+    color: white;
+    background-color: var(--black);
+    padding: 10px;
+    width: 200px;
+    
+}
