@@ -26,6 +26,11 @@
     width: 300px;
     height: 350px;
     margin-bottom: 100px;
+    transition: 0.5s;
+}
+.product:hover {
+    opacity: 97%;
+    transition: 0.5s;
 }
 .product img {
     border-radius: 100%;
@@ -59,6 +64,14 @@
     border: 2px solid var(--brown4);
     color: var(--brown4);
     translate: 0px -50px;
+    background: linear-gradient(to left, white 50%, var(--gray) 50%) right;
+    background-size: 200%;
+    transition: .2s ease-out;
+}
+.add-product:hover {
+    background-position: left;
+    color: white;
+    cursor: pointer;
 }
 .pastries {
     background-color: var(--brown2);
@@ -85,4 +98,51 @@
     font-family: Raleway;
     color: var(--brown3);
     padding-bottom: 100px;
+}
+
+#subscription-div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 10%;
+}
+#subscription-div img {
+    width: 300px;
+}
+#subscription-info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+}
+#subscription-info h1 {
+    font-family: Raleway;
+    font-size: 32px;
+    color: var(--brown4);
+}
+#subscription-info p {
+    font-family: Raleway;
+    font-size: 20px;
+    color: var(--brown2);
+    width: 400px;
+}
+#subscription-price {
+    font-size: 40px;
+}
+#subscription-info a {
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--brown4);
+    border: 2px solid var(--brown4);
+    text-align: center;
+    padding: 10px;
+}
+#subscription-info a:hover {
+    background-color: var(--brown4);
+    color: white;
+}
+@media only screen and (max-width: 1000px) {
+    #subscription-div img {
+        display: none;
+    }
 }

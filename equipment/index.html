@@ -22,7 +22,7 @@
             <div>
                 <a href="../selection">Order Now</a>
             </div>
-            <a href="">
+            <a href="../cart">
                 <img class="cart-icon" src="../images/cart.png" alt="shopping cart" />
             </a>  
         </div>
@@ -32,7 +32,7 @@
         <h1>High Quality <br> Equipment</h1>
     </div>
     <div id="equipment-quote">
-        <h3 >"Master your brew with out premium equipment. From espresso machines to French presses, we've got you covered."</h3>
+        <h3>"Master your brew with out premium equipment. From espresso machines to French presses, we've got you covered."</h3>
     </div>
     <div class="equipment-div">
         <img src="../images/frenchpress.png" />
@@ -47,7 +47,7 @@
             <p class="equipment-description">Elegant design with durable glass and stainless steel</p>
             <p class="equipment-tip">*Use coarse grind coffee for the best results.</p>
             <p class="equipment-price">£ 80.60</p>
-            <input class="add-equipment" type="button" value="Add to Cart">
+            <input id="frenchpress" class="add-equipment" type="button" value="Add to Cart">
         </div>
     </div>
     <div class="equipment-div">
@@ -63,17 +63,17 @@
             <p class="equipment-description">Sleek, professional-grade espresso machine designed for coffee aficionados and beginners alike.</p>
             <p class="equipment-tip">*For optimal results, use freshly ground coffee, preheat your machine, and follow the recommended grind size for espresso.</p>
             <p class="equipment-price">£ 180.60</p>
-            <input class="add-equipment" type="button" value="Add to Cart">
+            <input id="espressomachine" class="add-equipment" type="button" value="Add to Cart">
         </div>
     </div>
     <footer id="contact-us">
         <div class="contact-navbar">
             <img src="../images/logoTransparentLight.png" alt=""/>
             <div class="contact-links">
-                <a href="">Our Selection</a>
-                <a href="">Brewing Equipment</a>
-                <a href="">Events</a>
-                <a href="">Contact Us</a>
+                <a href="../selection/">Our Selection</a>
+                <a href="#">Brewing Equipment</a>
+                <a href="../events/">Events</a>
+                <a href="#contact-us">Contact Us</a>
             </div>
         </div>
         <div class="contact-section">
@@ -121,8 +121,9 @@
                 </div>
                 <input type="button" value="Send"/>
             </div>
-            <img src="../images/transparentBeans.png" alt=""/>
+            <img class="footer-beans" src="../images/transparentBeans.png" alt=""/>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

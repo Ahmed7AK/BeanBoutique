@@ -7,6 +7,13 @@
     <title>Bean Boutique</title>
 </head>
 <body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img src="./images/transparentLogo.png" alt="Bean Boutique logo" />
+            <p>Congratulations! You have unlocked a special 50% first time customer discount. Apply code NEWCUSTOMER to checkout.</p>
+            <input id="closeModal" type="button" value="Close"/>
+        </div>
+    </div>
     <header>
         <a href="./index.html">
             <img src="./images/transparentLogo.png" alt="Bean Boutique logo" />
@@ -21,7 +28,7 @@
             <div>
                 <a href="./selection">Order Now</a>
             </div>
-            <a href="">
+            <a href="./cart">
                 <img class="cart-icon" src="./images/cart.png" alt="shopping cart" />
             </a>  
         </div>
@@ -32,17 +39,12 @@
         <img id="title1" src="./images/title1.jpg" alt="" />
         <img id="title2" src="./images/title2.jpg" alt="" />
         <div id="intro-link">
-            <a href="">Explore Our Blends</a>
+            <a href="./selection/">Explore Our Blends</a>
         </div>
     </div>
     <div id="slideshow">
-        <img src="./images/slideshow1.png" alt="" />
-        <p>Discover Unique Blends</p>
-        <div id="slide-indicator">
-            <div class="slide-circle" id="slide-circle1"></div>
-            <div class="slide-circle" id="slide-circle2"></div>
-            <div class="slide-circle" id="slide-circle3"></div>
-        </div>
+        <img id="slideshowImg"  src="" alt="" />
+        <p id="slideshowCaption"></p>
     </div>
     <div id="about-us">
         <h1>About Us</h1>
@@ -54,6 +56,7 @@
         </ul>
         <img src="./images/transparentVisual.png" alt=""/>
     </div>
+
     <div id="main-selection-div">
         <h1>For Caffiene Lovers</h1>
         <div id="main-selection">
@@ -83,24 +86,24 @@
             </div>
         </div>
         <div id="selection-link">
-            <a href="">Our Selection</a>
+            <a href="./selection/">Our Selection</a>
         </div>
     </div>
     <div id="main-equipment">
         <img src="./images/equipment.png" alt=""/>
         <h1>High Quality <br> Equipment</h1>
         <div>
-            <a href="">Brewing Equipment</a>
+            <a href="./equipment/">Brewing Equipment</a>
         </div>
     </div>
     <footer id="contact-us">
         <div class="contact-navbar">
             <img src="./images/logoTransparentLight.png" alt=""/>
             <div class="contact-links">
-                <a href="">Our Selection</a>
-                <a href="">Brewing Equipment</a>
-                <a href="">Events</a>
-                <a href="">Contact Us</a>
+                <a href="./selection/">Our Selection</a>
+                <a href="./equipment/">Brewing Equipment</a>
+                <a href="./events/">Events</a>
+                <a href="#contact-us">Contact Us</a>
             </div>
         </div>
         <div class="contact-section">
@@ -148,8 +151,9 @@
                 </div>
                 <input type="button" value="Send"/>
             </div>
-            <img src="./images/transparentBeans.png" alt=""/>
+            <img class="footer-beans" src="./images/transparentBeans.png" alt=""/>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
