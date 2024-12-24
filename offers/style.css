@@ -1,0 +1,21 @@
+#special-offer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10%;
+    background-color: var(--brown3);
+    padding: 50px;
+}
+#special-offer h1 {
+    font-family: Raleway;
+    font-size: 32px;
+    color: var(--beige);
+}
+#special-offer p {
+    font-family: Poppins;
+    font-size: 20px;
+    color: white;
+}
+#special-offer img {
+    width: 400px;
+}

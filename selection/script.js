@@ -15,13 +15,30 @@ let products = [
     {id: "darkroast", img: "../images/darkroast.png", name: "Dark Roast", rating: "4.5", price: "£ 67.85"},
 ]
 
+let confirmation = document.getElementById("confirmation");
+let confirmationMessage = document.getElementById("confirmation-message")
+let n = 0;
 
 for (let i = 0; i < products.length; i++) {
     let button = document.getElementById(products[i].id);
     if (button) {
         button.addEventListener('click', () => {
+            n++;
             let value = parseInt(localStorage.getItem(products[i].name));
-            localStorage.setItem(products[i].name, String(1 + value));      
+            localStorage.setItem(products[i].name, String(1 + value));
+            confirmation.style.display = "block";  
+            confirmationMessage.innerHTML = "Added to Cart: " + String(n);    
         });
     } 
 }
+
+let menuButton = document.getElementById("mobileMenuButton");
+let mobileMenu = document.getElementById("mobileMenu");
+menuButton.addEventListener("click", () => {
+    if (mobileMenu.style.display == "none") {
+        mobileMenu.style.display = "flex";
+    }
+    else {
+        mobileMenu.style.display = "none";
+    }
+})

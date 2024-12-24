@@ -1,0 +1,93 @@
+#signup-form {
+    margin: 10%;
+}
+#signup-form h1 {
+    font-size: 48px;
+    font-family: Raleway;
+    color: var(--brown3);
+    padding: 0px 0px 50px 0px;
+}
+#signup {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--brown4);
+    padding: 100px;
+    gap: 50px;
+}
+.signup-field {
+    font-family: Poppins;
+    height: 65px;
+    transition: 0.2s;
+}
+.signup-field:hover {
+    opacity: 70%;
+    transition: 0.2s;
+}
+.signup-field p {
+    font-size: 20px;
+    color: var(--brown4);
+}
+.signup-field input {
+    font-size: 24px;
+    color: var(--brown4);
+    border: 2px solid;
+}
+#signup-button {
+    display: flex;
+    align-items:end;
+    height: 65px;
+}
+#signup-button input {
+    font-size: 24px;
+    width: 300px;
+    background-color: var(--brown4);
+    color: white;
+    border: none;
+    padding: 10px;
+    transition: 0.2s;
+}
+#signup-button input:hover {
+    opacity: 90%;
+    transition: 0.2s;
+}
+#registrationSuccessful {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+  
+#registrationSuccessful div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: Poppins;
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; 
+}
+#closeRegistration {
+    background: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+}
+#closeRegistration:hover {
+    background: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    color: red;
+    border: 2px solid red;
+}

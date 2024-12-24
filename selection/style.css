@@ -29,7 +29,7 @@
     transition: 0.5s;
 }
 .product:hover {
-    opacity: 97%;
+    opacity: 90%;
     transition: 0.5s;
 }
 .product img {
@@ -66,6 +66,8 @@
     translate: 0px -50px;
     background: linear-gradient(to left, white 50%, var(--gray) 50%) right;
     background-size: 200%;
+    box-shadow: 2px 2px 5px gray;
+
     transition: .2s ease-out;
 }
 .add-product:hover {
@@ -145,4 +147,19 @@
     #subscription-div img {
         display: none;
     }
+}
+#confirmation {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    font-family: Poppins;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--blue);
+
+}
+#confirmation-message {
+    color: white;
+    padding: 10px 20px 10px 20px;
+    text-align: center
 }

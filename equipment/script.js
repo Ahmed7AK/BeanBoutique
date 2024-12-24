@@ -12,3 +12,14 @@ frenchPress.addEventListener("click", () => {
     let value = parseInt(localStorage.getItem("French Press"));
     localStorage.setItem("French Press",  String(1 + value));
 })
+
+let menuButton = document.getElementById("mobileMenuButton");
+let mobileMenu = document.getElementById("mobileMenu");
+menuButton.addEventListener("click", () => {
+    if (mobileMenu.style.display == "none") {
+        mobileMenu.style.display = "flex";
+    }
+    else {
+        mobileMenu.style.display = "none";
+    }
+})

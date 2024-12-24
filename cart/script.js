@@ -8,7 +8,7 @@ let products = [
 
     {id: "cookies", img: "../images/cookies.png", name: "Cookies", rating: "4.5", price: "£ 20.60"},
     {id: "cinnamonroll", img: "../images/cinnamonroll.png", name: "Cinnamon Roll", rating: "4.5", price: "£ 7.50"},
-    {id: "croissant", img: "../images/criossant.png", name: "Criossant", rating: "4.5", price: "£ 12.85"},
+    {id: "croissant", img: "../images/croissant.png", name: "Criossant", rating: "4.5", price: "£ 12.85"},
 
     {id: "lightroast", img: "../images/lightroast.png", name: "Light Roast", rating: "4.5", price: "£ 50.60"},
     {id: "mediumroast", img: "../images/mediumroast.png", name: "Medium Roast", rating: "4.5", price: "£ 44.50"},
@@ -58,7 +58,8 @@ function createItem(imageSrc, name, quantity, price, deleteImageSrc) {
 }
 
 let container = document.getElementById('cart');
-
+let totalPrice =  document.getElementById('totalPrice')
+let total = 0;
 
 for (let i = 0; i < products.length; i++) {
     let productAmount = parseInt(localStorage.getItem(products[i].name));
@@ -71,11 +72,15 @@ for (let i = 0; i < products.length; i++) {
             '../images/trash.png'
         );
         container.appendChild(newComponent);
+        total += parseFloat(products[i].price.slice(1));
+        totalPrice.innerHTML = "Total: " + "£ " +  String(total);
 
         let deleteItem = newComponent.lastChild;
         deleteItem.onclick = () => {
             container.removeChild(newComponent);
             localStorage.setItem(products[i].name, parseInt(localStorage.getItem(products[i].name)) - 1);
+            total -= parseFloat(products[i].price.slice(1));
+            totalPrice.innerHTML = "Total: " + "£ " +  String(total.toFixed(2));
         }
 
         let clearCart = document.getElementById("clear-cart");
@@ -109,6 +114,23 @@ for (let i = 0; i < products.length; i++) {
 
 }
 
+let checkout = document.getElementById("checkout");
+checkout.addEventListener('click', () => {
+    if (total > 0) {
+        window.location.href = "../checkout";
+    }
+})
+
+let menuButton = document.getElementById("mobileMenuButton");
+let mobileMenu = document.getElementById("mobileMenu");
+menuButton.addEventListener("click", () => {
+    if (mobileMenu.style.display == "none") {
+        mobileMenu.style.display = "flex";
+    }
+    else {
+        mobileMenu.style.display = "none";
+    }
+})
 
 
 

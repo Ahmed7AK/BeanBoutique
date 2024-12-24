@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
+    <div id="confirmation">
+        <p id="confirmation-message">Added to Cart</p>
+    </div>
     <header>
         <a href="../index.html">
             <img src="../images/transparentLogo.png" alt="Bean Boutique logo" />
@@ -26,7 +29,21 @@
                 <img class="cart-icon" src="../images/cart.png" alt="shopping cart" />
             </a>  
         </div>
+        <svg id="mobileMenuButton" class="mobile-menu-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+            <path d="M4 6l16 0"></path>
+            <path d="M4 12l16 0"></path>
+            <path d="M4 18l16 0"></path>
+        </svg>
     </header>
+    <div id="mobileMenu" class="mobile-menu">
+        <a href="#">Our Selection</a>
+        <a href="../equipment">Brewing Equipment</a>
+        <a href="../events">Events</a>
+        <a href="#contact-us">Contact Us</a>
+        <a href="../cart">
+            <img class="cart-icon" src="../images/cart.png" alt="shopping cart" />
+        </a> 
+    </div>
     <div id="selection-div">
         <h1>Our Selection</h1>
         <div id="selection-drinks">

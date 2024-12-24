@@ -77,6 +77,14 @@ header img:hover {
     width: 30px;
     height: 30px;
 }
+.mobile-menu-button {
+    position: absolute;
+    display: none;
+}
+.mobile-menu {
+    position: absolute;
+    display: none;
+}
 #intro {
     display: flex;
     justify-content: center;
@@ -461,6 +469,40 @@ textarea {
     }
 }
 @media only screen and (max-width: 1000px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-menu-button {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 50px;
+        display: block;
+        color: var(--brown2);
+    }
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .mobile-menu a {
+        color: var(--brown2);
+        font-family: Poppins;
+        font-size: 15px;
+        padding: 20px;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        border-top: 2px solid rgb(190, 190, 190);
+    }
+    .mobile-menu a:hover {
+        color: var(--brown4);
+        transition: 0.2s;
+    }
     #main-equipment {
         display:flex;
         flex-direction: column;
@@ -513,4 +555,19 @@ textarea {
         justify-content: center;
         align-items: center;
     }
+}
+#offer-link {
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-family: Poppins;
+    color: var(--brown2);
+    gap: 5px;
+}
+#offer-link a {
+    color: var(--brown4);
+}
+#offer-link a:hover {
+    color: var(--blue);
 }
