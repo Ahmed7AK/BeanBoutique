@@ -25,7 +25,7 @@ for (let i = 0; i < products.length; i++) {
     if (parseInt(localStorage.getItem(products[i].name)) != 0) {
         localStorage.setItem(products[i].name, 0);
     }
-    else if (parseInt(localStorage.getItem(products[i].name)) >= 0 ){
+     if (parseInt(localStorage.getItem(products[i].name)) >= 0 ){
         if (button) {
             button.addEventListener('click', () => {
                 n++;
