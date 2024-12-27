@@ -22,22 +22,21 @@ let n = 0;
 
 for (let i = 0; i < products.length; i++) {
     let button = document.getElementById(products[i].id);
-    if (parseInt(localStorage.getItem(products[i].name)) != 0) {
+    if (localStorage.getItem(products[i].name) == null) {
         localStorage.setItem(products[i].name, 0);
     }
-     if (parseInt(localStorage.getItem(products[i].name)) >= 0 ){
-        if (button) {
-            button.addEventListener('click', () => {
-                n++;
-                let value = parseInt(localStorage.getItem(products[i].name));
-                localStorage.setItem(products[i].name, String(1 + value));
-                confirmation.style.display = "block";  
-                confirmationMessage.innerHTML = "Added to Cart: " + String(n);    
-            });
-        } 
-    }
-
+    if (button) {
+        button.addEventListener('click', () => {
+            n++;
+            let value = parseInt(localStorage.getItem(products[i].name));
+            localStorage.setItem(products[i].name, String(1 + value));
+            confirmation.style.display = "block";  
+            confirmationMessage.innerHTML = "Added to Cart: " + String(n);    
+        });
+    } 
 }
+
+
 
 let menuButton = document.getElementById("mobileMenuButton");
 let mobileMenu = document.getElementById("mobileMenu");
