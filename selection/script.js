@@ -22,7 +22,7 @@ let n = 0;
 
 for (let i = 0; i < products.length; i++) {
     let button = document.getElementById(products[i].id);
-    if (localStorage.getItem(products[i].name) == null) {
+    if (localStorage.getItem(products[i].name) === null) {
         localStorage.setItem(products[i].name, 0);
     }
     if (button) {
