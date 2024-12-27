@@ -19,12 +19,17 @@ let confirmation = document.getElementById("confirmation");
 let confirmationMessage = document.getElementById("confirmation-message")
 let n = 0;
 
+
 for (let i = 0; i < products.length; i++) {
     let button = document.getElementById(products[i].id);
     if (button) {
         button.addEventListener('click', () => {
             n++;
             let value = parseInt(localStorage.getItem(products[i].name));
+            if (isNaN(value)) {
+                localStorage.setItem(products[i].name, 0);
+                let value = parseInt(localStorage.getItem(products[i].name));
+            }
             localStorage.setItem(products[i].name, String(1 + value));
             confirmation.style.display = "block";  
             confirmationMessage.innerHTML = "Added to Cart: " + String(n);    
