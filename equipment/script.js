@@ -1,7 +1,12 @@
 let espressoMachine = document.getElementById("espressomachine");
 let frenchPress = document.getElementById("frenchpress");
 
-
+if (localStorage.getItem("espressomachine") === null) {
+    localStorage.setItem("espressomachine", 0);
+}
+if (localStorage.getItem("frenchpress") === null) {
+    localStorage.setItem("frenchpress", 0);
+}
 
 espressoMachine.addEventListener("click", () => {
     let value = parseInt(localStorage.getItem("Espresso Machine"));
