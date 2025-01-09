@@ -122,7 +122,7 @@ for (let i = 0; i < products.length; i++) {
 let checkout = document.getElementById("checkout");
 checkout.addEventListener('click', () => {
     if (total > 0) {
-        window.location.href = "../checkout";
+        window.location.href = "../checkout/index.html";
     }
 })
 
