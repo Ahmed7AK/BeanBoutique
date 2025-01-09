@@ -2,25 +2,24 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
 }
 
 .container {
     max-width: 500px;
     margin: 50px auto;
-    background: #fff;
+    background: var(--beige);
     padding: 20px;
-    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .form-group label {
@@ -34,7 +33,6 @@ h2 {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
     box-sizing: border-box;
 }
 
@@ -52,15 +50,33 @@ h2 {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #3976C7;
+    background-color: #36c755;
     color: #fff;
     border: none;
-    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .btn:hover {
-    background-color: #218838;
+    background-color: #2fad4a;
+}
+#payment-confirmed {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 100px;
+}
+#payment-confirmed svg {
+    width: 150px;
+    height: 150px;
+}
+#payment-confirmed a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    background-color: var(--blue);
 }

@@ -1,10 +1,13 @@
+body {
+    background-color: var(--brown4);
+}
 #signup-form {
     margin: 10%;
 }
 #signup-form h1 {
     font-size: 48px;
     font-family: Raleway;
-    color: var(--brown3);
+    color: var(--beige);
     padding: 0px 0px 50px 0px;
 }
 #signup {
@@ -14,6 +17,8 @@
     margin-right: 5%;
     justify-content: center;
     align-items: center;
+    background-color: white;
+
     border: 2px solid var(--brown4);
     padding: 100px;
     gap: 50px;

@@ -19,3 +19,11 @@ paymentMethod.addEventListener('change', () => {
         cardDetails.style.display = 'none';
     }
 });
+
+let placeOrder = document.getElementById("place-order");
+let paymentContainer = document.getElementById("payment-container");
+let paymentConfirmed = document.getElementById("payment-confirmed");
+placeOrder.addEventListener("click", () => {
+    paymentContainer.style.display = "none";
+    paymentConfirmed.style.display = "flex";
+})

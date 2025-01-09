@@ -272,6 +272,8 @@ header img:hover {
 }
 .main-selection-item img {
   border-radius: 100%;
+  width: 200px;
+  height: 200px;
   translate: 0 -100px;
   position: absolute;
 }
@@ -313,15 +315,13 @@ header img:hover {
   justify-content: center;
   padding-bottom: 20%;
 }
-#main-equipment img {
-  animation: float 3s ease-in-out infinite;
-
-}
 #main-equipment h1 {
   font-family: Rosario;
   font-size: 36px;
   position: absolute;
   color: var(--brown3);
+  animation: float 3s ease-in-out infinite;
+
 }
 #main-equipment div {
   position: absolute;
@@ -536,6 +536,11 @@ textarea {
   .mobile-menu a:hover {
     color: var(--brown4);
     transition: 0.2s;
+  }
+  #slideshow img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
   }
   #main-equipment {
     display: flex;

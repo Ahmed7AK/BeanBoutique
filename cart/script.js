@@ -73,7 +73,7 @@ for (let i = 0; i < products.length; i++) {
         );
         container.appendChild(newComponent);
         total += parseFloat(products[i].price.slice(1));
-        totalPrice.innerHTML = "Total: " + "£ " +  String(total);
+        totalPrice.innerHTML = "Total: " + "£ " +  String(total.toFixed(2));
 
         let deleteItem = newComponent.lastChild;
         deleteItem.onclick = () => {
@@ -108,7 +108,12 @@ for (let i = 0; i < products.length; i++) {
     
             container.innerHTML = "";
             container.appendChild(cartLabels);
-            localStorage.setItem(products[i].name, 0);
+            for (let p = 0; p < products.length; p++)
+            {
+                localStorage.setItem(products[p].name, 0);
+                totalPrice.innerHTML = "Total: " + "£ " +  "0";
+            }
+            
         }
     }
 

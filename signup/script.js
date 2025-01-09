@@ -8,7 +8,7 @@ registerButton.addEventListener("click", () => {
 let closeButton = document.getElementById("closeRegistration");
 closeButton.addEventListener("click", () => {
     registrationSuccessful.style.display = "none";
-    window.location.href = "../eventsindex.html";
+    window.location.href = "../events/index.html";
 })
 
 let menuButton = document.getElementById("mobileMenuButton");

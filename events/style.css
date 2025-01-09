@@ -44,8 +44,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 180px;
-    height: 40px;
+    width: 200px;
+    height: 60px;
     background-color: var(--brown3);
     transition: 0.3s;
 }
@@ -57,7 +57,7 @@
     font-family: Poppins;
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-size: 20px;
 }
 @media only screen and (max-width: 1000px) {
     .event-div {
